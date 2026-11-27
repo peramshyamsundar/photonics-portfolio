@@ -12,3 +12,5 @@ c = gf.routing.add_fiber_array(component=wg)
 c.write_gds("gds/step7_loopback.gds")  # writing the component to a GDS file
 c.pprint_ports()  # printing the ports of the component
 c.show()  # displaying the component in KLayout viewer
+# result : 4 GCs (2 device + 2 alignment loopbacks)
+# distance between GCs : 127µm apart(59.5 to 186.5µm,186.5 to 313.5µm,313.5 to 440.5µm)
